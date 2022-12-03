@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12/03/2022 09:13:35 PM
+// Create Date: 12/03/2022 09:28:15 PM
 // Design Name: 
-// Module Name: system
+// Module Name: vga
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,15 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module system(
+module vga(
     output wire [3:0] vgaRed, vgaGreen, vgaBlue,
     output wire Hsync, Vsync,
-    input wire RsRx,
-    input wire btnC, clk
+    input [7:0] digits[4:0]
     );
-
-//-9999 to 9999 or NaN    
-wire [7:0] digits[4:0];
-
-vga v(vgaRed, vgaGreen, vgaBlue, Hsync, Vsync, digits);
 endmodule
