@@ -21,15 +21,23 @@
 
 
 module system(
-    output wire [3:0] vgaRed, vgaGreen, vgaBlue,
-    output wire Hsync, Vsync,
+    output wire [11:0] rgb,
+    output wire hsync, vsync,
     input wire RsRx,
-    input wire btnC, clk,
-    input wire [11:0] sw
+    input wire btnC, //reset
+    input wire clk
     );
 
-//-9999 to 9999 or NaN    
-wire [7:0] digits[4:0];
+// 0-9, 10=N, 11=a, 12=-
+wire [4:0] number4, number3, number2, number1, number0;
 
-vga v(vgaRed, vgaGreen, vgaBlue, Hsync, Vsync, digits[4], digits[3], digits[2], digits[1], digits[0], sw, clk, btnC);
+// for debug	
+assign number4 = 0;
+assign number3 = 11;
+assign number2 = 10;
+assign number1 = 4;
+assign number0 = 5;
+
+vga v(rgb, hsync, vsync, clk, btnC, number4, number3, number2, number1, number0);
+
 endmodule

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1670176613" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/system.dcp">
-  <File Type="PA-TCL" Name="vga.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="vga_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="vga_reports.tcl"/>
-  <File Type="RDS-RDS" Name="vga.vds"/>
-  <File Type="RDS-UTIL" Name="vga_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="vga_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="vga.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="vga_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="vga_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1670179437" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/system.dcp">
+  <File Type="PA-TCL" Name="system.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="system_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
+  <File Type="RDS-RDS" Name="system.vds"/>
+  <File Type="RDS-UTIL" Name="system_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="system_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="system.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="system_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="system_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/rom_font.v">
@@ -39,13 +39,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/singlePulser.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/system.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -61,7 +54,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="vga"/>
+      <Option Name="TopModule" Val="system"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

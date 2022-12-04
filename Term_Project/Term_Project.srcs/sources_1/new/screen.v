@@ -22,25 +22,21 @@
 
 module screen(
     output reg [11:0] rgb_reg,
-    //    output reg [3:0] row, col, //debug
-    input wire [9:0] y, x, // /20
-    input wire p_tick,
+    input wire [9:0] y, x, // 0-23,0-31
+    input wire p_tick, btnC,
     input wire [4:0] number4, number3, number2, number1, number0
     );
     
+    // rom for storing fonts
     wire [3:0] row, col;
     reg [4:0] number;
     wire [3:0] digit;
     wire [11:0] z;
-    //    reg [11:0] screen[0:23][0:31];
-    
     rom_font r(z,row,col,number);
-    
-    reg [11:0] gradient = 0;
-    reg [15:0] count = 0;
-    
+         
     wire [11:0] next_rgb;
     
+    // map fonts in rom to the position on screen   
     assign row = y-8;
     assign col = (x-2)%6;
     assign digit = 4-(x-2)/6;
@@ -56,14 +52,24 @@ module screen(
     assign next_rgb = (y >= 8 && y <= 15 && x >= 2 && x <= 30 && (x-2)%6 >= 0 && (x-2)%6 <= 4) ? z : 
     (x>0 && x<32 && (y <= 4 || y >= 20)) ? gradient : 12'h0;
     
+    // gradient rgb effect
+    reg [11:0] gradient = 0;
+    reg [15:0] count = 0;
+    
     always @(posedge p_tick) begin
         if (y==0 && x==0)
             count <= count + 1;
         if (count == 0)
             gradient <= gradient + 1;
+        if (btnC) begin //reset gradient rgb effect
+            gradient = 0;
+            count = 0;
+        end     
     end    
     
     always @(posedge p_tick) begin
         rgb_reg[11:0] <= next_rgb;
     end
+    
+
 endmodule

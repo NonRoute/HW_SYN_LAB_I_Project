@@ -21,22 +21,23 @@
 
 
 module rom_font(
-    output wire [11:0] z, //color
+    output wire [11:0] z, //color rgb, 4 bits for each color
     input wire [3:0] row,
     input wire [3:0] col,
     input wire [4:0] number);
     
     // declares a memory rom of 120 5-bit registers.
-    //The indices are 0 to 119
+    // The indices are 0 to 119
     (* synthesis, rom_block = "ROM_CELL XYZ01" *)    
     reg [4:0] rom[0:119];
     // NOTE: To infer combinational logic instead of a ROM, use
     // (* synthesis, logic_block *)
 
+    // read pixel that have color for each text
     initial $readmemb("rom.data", rom);
     
-    wire [0:119] a;
+    wire [0:119] a; //row in rom
     assign a = 8*number+row;
-    assign z = rom[a][4-col] == 1 ? 12'h8ff: 12'h000;
+    assign z = rom[a][4-col] == 1 ? 12'h8ff: 12'h000; //color of text and background color
 
 endmodule
