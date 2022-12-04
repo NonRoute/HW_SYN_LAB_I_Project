@@ -25,21 +25,18 @@ module vga(
     output wire hsync, vsync,
 //    input wire [7:0] numbers [5:0],
     input wire clk, btnC,
-    output row, col, y, x
+    input [15:0] sw
+//    output row, col, y, x
     );
-    parameter WIDTH = 640;
-	parameter HEIGHT = 480;
+
+	wire [4:0] number4, number3, number2, number1, number0;
 	
-	reg [4:0] number4, number3, number2, number1, number0;
-	
-	initial
-	begin
-        number4 = 0;
-        number3 = 1;
-        number2 = 2;
-        number1 = 3;
-        number0 = 4;
-	end
+    assign number4 = 10;
+    assign number3 = sw[15:12];
+    assign number2 = sw[11:8];
+    assign number1 = sw[7:4];
+    assign number0 = sw[3:0];
+
 	// register for Basys 2 8-bit RGB DAC 
 	wire [11:0] rgb_reg;
 	reg reset = 0;
@@ -51,7 +48,8 @@ module vga(
 	// instantiate vga_sync
 	vga_sync vga_sync_unit (.clk(clk), .reset(btnC), .hsync(hsync), .vsync(vsync), .video_on(video_on), .p_tick(p_tick), .x(x), .y(y));
 		
-	screen s(rgb_reg,y/20,x/20,p_tick,number4,number3,number2,number1,number0);	        
+	screen s(rgb_reg,y/20,x/20,clk,number4,number3,number2,number1,number0);
+		        
 //	output
 	assign rgb = (video_on) ? rgb_reg : 12'b0;
 endmodule

@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sun Dec  4 20:54:49 2022
-# Process ID: 4312
+# Start of session at: Sun Dec  4 23:12:04 2022
+# Process ID: 25116
 # Current directory: D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.runs/synth_1
 # Command line: vivado.exe -log vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga.tcl
 # Log file: D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.runs/synth_1/vga.vds
@@ -23,12 +23,12 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8672
+INFO: [Synth 8-7075] Helper process launched with PID 8360
 WARNING: [Synth 8-9971] redeclaration of ansi port 'clkDiv' is not allowed [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v:28]
 WARNING: [Synth 8-9449] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v:33]
 WARNING: [Synth 8-9449] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v:38]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vga' [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:23]
 INFO: [Synth 8-6157] synthesizing module 'vga_sync' [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga_sync.v:23]
@@ -37,149 +37,31 @@ INFO: [Synth 8-6157] synthesizing module 'screen' [D:/OneDrive/University/year_3
 INFO: [Synth 8-6157] synthesizing module 'rom_font' [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/rom_font.v:23]
 INFO: [Synth 8-3876] $readmem data file 'rom.data' is read successfully [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/rom_font.v:36]
 INFO: [Synth 8-6155] done synthesizing module 'rom_font' (0#1) [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/rom_font.v:23]
-WARNING: [Synth 8-567] referenced signal 'z' should be on the sensitivity list [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/screen.v:41]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/screen.v:44]
 INFO: [Synth 8-6155] done synthesizing module 'screen' (0#1) [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/screen.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (10) of module 'screen' [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:454]
-WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'screen' [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:454]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (10) of module 'screen' [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:51]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'screen' [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:51]
 INFO: [Synth 8-6155] done synthesizing module 'vga' (0#1) [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:23]
-WARNING: [Synth 8-5856] 3D RAM screen_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
-WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  screen_reg 
+WARNING: [Synth 8-6014] Unused sequential element digit_reg was removed.  [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/screen.v:43]
 WARNING: [Synth 8-7129] Port col[3] in module rom_font is either unconnected or has no load
-WARNING: [Synth 8-7129] Port y[9] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port y[8] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port y[7] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port y[6] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port y[5] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[9] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[8] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[7] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[6] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port x[5] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[7] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[6] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[5] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[4] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[3] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[2] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[1] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number4[0] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[7] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[6] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[5] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[4] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[3] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[2] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[1] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number3[0] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[7] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[6] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[5] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[4] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[3] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[2] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[1] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number2[0] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[7] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[6] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[5] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[4] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[3] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[2] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[1] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number1[0] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number0[7] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number0[6] in module screen is either unconnected or has no load
-WARNING: [Synth 8-7129] Port number0[5] in module screen is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1293.059 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:12]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:12]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:13]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:13]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:14]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:14]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:15]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:15]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:16]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:16]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:17]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:17]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:19]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:19]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:25]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:28]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:29]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:29]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:30]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:31]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:32]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:35]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'RsRx'. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:267]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/constrs_1/imports/2110363_HW_SYN_LAB_I/Basys-3-Master.xdc:267]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -197,49 +79,53 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/vga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1293.059 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1293.059 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   32 Bit       Adders := 1     
 	   2 Input   10 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 1     
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	  32 Input   12 Bit        Muxes := 1     
-	  24 Input   12 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -257,7 +143,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -278,19 +164,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -308,37 +194,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -355,40 +241,41 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    16|
-|3     |LUT1   |     4|
-|4     |LUT2   |    32|
-|5     |LUT3   |    19|
-|6     |LUT4   |    33|
-|7     |LUT5   |    27|
-|8     |LUT6   |    29|
-|9     |FDCE   |    24|
-|10    |FDRE   |     2|
-|11    |IBUF   |     2|
-|12    |OBUF   |    14|
+|2     |CARRY4 |    85|
+|3     |LUT1   |    14|
+|4     |LUT2   |   132|
+|5     |LUT3   |    69|
+|6     |LUT4   |    99|
+|7     |LUT5   |    58|
+|8     |LUT6   |   120|
+|9     |MUXF7  |     5|
+|10    |FDCE   |    24|
+|11    |FDRE   |    14|
+|12    |IBUF   |    18|
+|13    |OBUF   |    14|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1293.059 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1293.770 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1293.059 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1293.059 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1293.770 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1294.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1293.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1299.676 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 30dd3de
+Synth Design complete, checksum: d7002689
 INFO: [Common 17-83] Releasing license: Synthesis
-30 Infos, 83 Warnings, 28 Critical Warnings and 0 Errors encountered.
+31 Infos, 12 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1293.770 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1299.676 ; gain = 6.617
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.runs/synth_1/vga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vga_utilization_synth.rpt -pb vga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec  4 20:55:19 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  4 23:12:35 2022...

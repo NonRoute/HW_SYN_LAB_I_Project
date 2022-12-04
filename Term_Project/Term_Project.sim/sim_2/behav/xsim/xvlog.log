@@ -7,7 +7,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semes
 INFO: [VRFC 10-311] analyzing module vga_sync
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module vga
-WARNING: [VRFC 10-9336] redeclaration of ANSI port 'x' is not allowed [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:46]
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'x' is not allowed [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:44]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clockDiv
 WARNING: [VRFC 10-9336] redeclaration of ANSI port 'clkDiv' is not allowed [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v:28]
