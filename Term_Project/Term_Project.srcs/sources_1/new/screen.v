@@ -35,23 +35,34 @@ module screen(
     reg [11:0] screen[0:23][0:31];
     
     rom_font r(z,row,col,number);
-
+    
+    reg [11:0] gradient = 0;
+    reg [15:0] count = 0;
+    
     always @(posedge clk) begin
        if (y >= 8 && y <= 15 && x>= 2 && (x-2)%6 >= 0 && (x-2)%6 <= 4) begin
-           row = y-8;
-           col = (x-2)%6;
-           digit = 4-(x-2)/6;
+           row <= y-8;
+           col <= (x-2)%6;
+           digit <= 4-(x-2)/6;
            case(digit)
-                4: number = number4;
-                3: number = number3;
-                2: number = number2;
-                1: number = number1;
-                0: number = number0;
+                4: number <= number4;
+                3: number <= number3;
+                2: number <= number2;
+                1: number <= number1;
+                0: number <= number0;
            endcase
-           rgb_reg[11:0] = z;
-       end else begin
-           rgb_reg[11:0] = 12'h00f; //000
+           rgb_reg[11:0] <= z;
+       end 
+       else if (y <= 4 || y >= 20) begin
+           rgb_reg[11:0] <= gradient; //000
        end
+       else 
+           rgb_reg[11:0] <= 12'h0;
+           
+       if (y==0 && x==0)
+            count <= count + 1;
+       if (count == 0)
+            gradient <= gradient + 1;
     end
 	
 endmodule

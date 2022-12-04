@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Sun Dec  4 23:13:41 2022
+| Date         : Sun Dec  4 23:46:14 2022
 | Host         : DESKTOP-K9LHMM3 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file vga_methodology_drc_routed.rpt -pb vga_methodology_drc_routed.pb -rpx vga_methodology_drc_routed.rpx
 | Design       : vga
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 51
+             Violations found: 61
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-16 | Warning  | Large setup violation         | 20         |
+| TIMING-16 | Warning  | Large setup violation         | 30         |
 | TIMING-18 | Warning  | Missing input or output delay | 31         |
 +-----------+----------+-------------------------------+------------+
 
@@ -35,102 +35,152 @@ Table of Contents
 -----------------
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -3.303 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/col_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.914 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/col_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -3.356 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/col_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -2.918 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/col_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -3.725 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.618 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/col_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -3.731 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[11]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.618 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/col_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -3.786 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[7]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.714 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/col_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -3.856 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/col_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.725 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/row_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -3.856 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/col_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.725 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/row_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -3.856 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/row_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.850 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/row_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -3.856 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/row_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.865 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/row_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -3.869 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/row_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.927 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -3.869 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/row_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -3.973 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -4.037 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/col_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.004 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -6.486 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.004 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -6.503 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.182 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/number_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -6.536 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.182 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/number_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -6.583 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.182 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/number_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -6.759 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[2]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.182 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/number_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -6.821 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[1]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.364 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[11]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -6.834 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[3]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.395 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[6]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -6.854 ns between vga_sync_unit/h_count_reg_reg[8]/C (clocked by sys_clk_pin) and s/number_reg[0]/CE (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -4.395 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[7]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -4.454 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[2]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -4.454 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[3]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -4.507 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[0]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -4.507 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[1]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -4.507 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[4]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -4.507 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/rgb_reg_reg[5]/S (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -6.122 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[0]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -6.207 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[1]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -6.530 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -6.532 ns between vga_sync_unit/h_count_reg_reg[7]/C (clocked by sys_clk_pin) and s/digit_reg[2]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

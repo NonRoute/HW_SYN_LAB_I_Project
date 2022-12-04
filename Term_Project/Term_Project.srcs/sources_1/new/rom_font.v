@@ -37,6 +37,6 @@ module rom_font(
     
     wire [0:119] a;
     assign a = 8*number+row;
-    assign z = rom[a][4-col] == 1 ? 12'hff0: 12'h0f0;
+    assign z = rom[a][4-col] == 1 ? 12'h8ff: 12'h000;
 
 endmodule

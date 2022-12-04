@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Sun Dec  4 23:13:42 2022
+| Date             : Sun Dec  4 23:46:14 2022
 | Host             : DESKTOP-K9LHMM3 running 64-bit major release  (build 9200)
 | Command          : report_power -file vga_power_routed.rpt -pb vga_power_summary_routed.pb -rpx vga_power_routed.rpx
 | Design           : vga
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.084        |
+| Total On-Chip Power (W)  | 0.087        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.012        |
+| Dynamic (W)              | 0.015        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 99.6         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |      640 |       --- |             --- |
-|   LUT as Logic |     0.004 |      411 |     20800 |            1.98 |
-|   CARRY4       |    <0.001 |       85 |      8150 |            1.04 |
-|   Register     |    <0.001 |       40 |     41600 |            0.10 |
+| Slice Logic    |     0.004 |      748 |       --- |             --- |
+|   LUT as Logic |     0.004 |      461 |     20800 |            2.22 |
+|   CARRY4       |    <0.001 |       92 |      8150 |            1.13 |
+|   Register     |    <0.001 |       82 |     41600 |            0.20 |
 |   F7/F8 Muxes  |    <0.001 |        5 |     32600 |            0.02 |
-|   Others       |     0.000 |        5 |       --- |             --- |
-| Signals        |     0.004 |      441 |       --- |             --- |
-| I/O            |     0.003 |       32 |       106 |           30.19 |
+|   Others       |     0.000 |        4 |       --- |             --- |
+| Signals        |     0.004 |      526 |       --- |             --- |
+| I/O            |     0.006 |       32 |       106 |           30.19 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.084 |          |           |                 |
+| Total          |     0.087 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.009 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.019 |       0.010 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,9 +141,9 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| vga             |     0.012 |
-|   s             |     0.003 |
-|   vga_sync_unit |     0.005 |
+| vga             |     0.015 |
+|   s             |     0.004 |
+|   vga_sync_unit |     0.006 |
 +-----------------+-----------+
 
 
