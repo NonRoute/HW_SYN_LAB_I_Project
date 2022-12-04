@@ -48,7 +48,7 @@ module vga(
 	// instantiate vga_sync
 	vga_sync vga_sync_unit (.clk(clk), .reset(btnC), .hsync(hsync), .vsync(vsync), .video_on(video_on), .p_tick(p_tick), .x(x), .y(y));
 		
-	screen s(rgb_reg,y/20,x/20,clk,number4,number3,number2,number1,number0);
+	screen s(rgb_reg,y/20,x/20,p_tick,number4,number3,number2,number1,number0);
 		        
 //	output
 	assign rgb = (video_on) ? rgb_reg : 12'b0;
