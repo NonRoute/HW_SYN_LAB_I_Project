@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/rom_font.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_font
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/screen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module screen
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'row' is not allowed [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/screen.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'x' is not allowed [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/vga.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockDiv
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'clkDiv' is not allowed [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v:28]
+WARNING: [VRFC 10-8956] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v:33]
+WARNING: [VRFC 10-8956] extra semicolon is not allowed here in this dialect; use SystemVerilog mode instead [D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/singlePulser.v:38]
+INFO: [VRFC 10-311] analyzing module singlePulser
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sim_1/new/rom_font_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_font_tb

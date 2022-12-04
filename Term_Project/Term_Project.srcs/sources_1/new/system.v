@@ -24,11 +24,12 @@ module system(
     output wire [3:0] vgaRed, vgaGreen, vgaBlue,
     output wire Hsync, Vsync,
     input wire RsRx,
-    input wire btnC, clk
+    input wire btnC, clk,
+    input wire [11:0] sw
     );
 
 //-9999 to 9999 or NaN    
 wire [7:0] digits[4:0];
 
-vga v(vgaRed, vgaGreen, vgaBlue, Hsync, Vsync, digits);
+vga v(vgaRed, vgaGreen, vgaBlue, Hsync, Vsync, digits[4], digits[3], digits[2], digits[1], digits[0], sw, clk, btnC);
 endmodule
