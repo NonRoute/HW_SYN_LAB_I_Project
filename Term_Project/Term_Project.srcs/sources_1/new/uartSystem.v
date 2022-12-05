@@ -55,7 +55,7 @@ module uartSystem(
     wire sent, received, baud;
     reg [7:0] answer[0:4];
     reg [2:0] state = 0;
-    reg signed [15:0] result;
+    reg signed [27:0] result;
     reg signed [14:0] op1, op2;
     reg op1_sign=0, op2_sign=0;
     reg [1:0] operation=0;
