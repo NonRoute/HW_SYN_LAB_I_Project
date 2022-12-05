@@ -157,7 +157,7 @@ module uartSystem(
                     answer[1]=(result/10)-(result/100*10);
                     answer[0]=(result)-(result/10*10);
                 end
-                state=0; op1_sign=0; op2_sign=0; op1=0; op2=0;
+                state=0; op1_sign=0; op2_sign=0; op1=0; op2=0; operation=0;
                 end
                 default: data_in = 8'hff;
             endcase
