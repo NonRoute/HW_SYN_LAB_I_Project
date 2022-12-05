@@ -23,20 +23,16 @@
 module system(
     output wire [11:0] rgb,
     output wire hsync, vsync,
+    output wire RsTx,
     input wire RsRx,
     input wire btnC, //reset
     input wire clk
     );
 
-// 0-9, 10=N, 11=a, 12=-
+// 0-9, 10=N, 11=a, 12=-, 13=blank
 wire [4:0] number4, number3, number2, number1, number0;
 
-// for debug	
-assign number4 = 0;
-assign number3 = 11;
-assign number2 = 10;
-assign number1 = 4;
-assign number0 = 5;
+uartSystem u(clk, RsRx, btnC, RsTx, number4, number3, number2, number1, number0);
 
 vga v(rgb, hsync, vsync, clk, btnC, number4, number3, number2, number1, number0);
 

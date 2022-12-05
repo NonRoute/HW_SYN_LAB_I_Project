@@ -99,5 +99,3 @@ set_property src_info {type:XDC file:1 line:267 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN B18 [get_ports RsRx]
 set_property src_info {type:XDC file:1 line:269 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN A18 [get_ports RsTx]
-set_property src_info {type:XDC file:1 line:270 export:INPUT save:INPUT read:READ} [current_design]
-set_property IOSTANDARD LVCMOS33 [get_ports RsTx]

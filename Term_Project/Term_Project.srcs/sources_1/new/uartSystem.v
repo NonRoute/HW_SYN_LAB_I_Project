@@ -1,9 +1,9 @@
 `timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
-// Company: Computer Engineering Department, Chulalongkorn University
-// Engineer: Pollawat Hongwimol
+// Company: 
+// Engineer: 
 // 
-// Create Date: 04/12/2020 03:03:19 AM
+// Create Date:
 // Design Name: 
 // Module Name: uartSystem
 // Project Name: 
@@ -29,16 +29,16 @@ module uartSystem (
     output [7:0] answer1,
     output [7:0] answer0
 );
-
+        
     localparam K0 = 8'h30;  //0
-    localparam K1 = 8'h30;  //1
-    localparam K2 = 8'h30;  //2
-    localparam K3 = 8'h30;  //3
-    localparam K4 = 8'h30;  //4
-    localparam K5 = 8'h30;  //5
-    localparam K6 = 8'h30;  //6
-    localparam K7 = 8'h30;  //7
-    localparam K8 = 8'h30;  //8
+    localparam K1 = 8'h31;  //1
+    localparam K2 = 8'h32;  //2
+    localparam K3 = 8'h33;  //3
+    localparam K4 = 8'h34;  //4
+    localparam K5 = 8'h35;  //5
+    localparam K6 = 8'h36;  //6
+    localparam K7 = 8'h37;  //7
+    localparam K8 = 8'h38;  //8
     localparam K9 = 8'h39;  //9
     localparam K_PLUS = 8'h2b;  //+
     localparam K_MINUS = 8'h2d;  //-
@@ -65,7 +65,7 @@ module uartSystem (
     assign answer2 = answer[2];
     assign answer1 = answer[1];
     assign answer0 = answer[0];
-
+    
     baudrate_gen baudrate_gen (
         clk,
         baud
@@ -83,14 +83,9 @@ module uartSystem (
         sent,
         RsTx
     );
-    alu alu (
-        result,
-        op1,
-        op2
-    );
 
     initial begin
-        answer[4] = 0;
+        answer[4] = 13;
         answer[3] = 0;
         answer[2] = 0;
         answer[1] = 0;
@@ -98,14 +93,13 @@ module uartSystem (
         op1 = 0;
         op2 = 0;
     end
-
+    
     always @(posedge baud) begin
         if (ena == 1) ena = 0;
-
         if (~last_rec & received) begin
-            if (data_out >= K0 && data_out <= K9)
-                case (data_out)
-                    K0, K1, K2, K3, K4, K5, K6, K7, K8, K9: begin
+            case (data_out)
+                K0, K1, K2, K3, K4, K5, K6, K7, K8, K9: begin 
+                        data_in = data_out;
                         case (state)
                             2'b00, 2'b01: begin
                                 state = 1;
@@ -116,7 +110,7 @@ module uartSystem (
                                 op2   = op2 * 10 + (data_out - K0);
                             end
                         endcase
-                    end
+                    end 
                     K_PLUS: begin
                         data_in = data_out;
                         case (state)
@@ -146,7 +140,6 @@ module uartSystem (
                     K_MUL: begin
                         data_in = data_out;
                         case (state)
-
                             2'b01: begin
                                 operation = 2;
                                 state = 2;
@@ -156,7 +149,6 @@ module uartSystem (
                     K_DIV: begin
                         data_in = data_out;
                         case (state)
-
                             2'b01: begin
                                 operation = 3;
                                 state = 2;
@@ -167,24 +159,31 @@ module uartSystem (
                         data_in = 8'h20;
                         if (op1_sign) op1 = -op1;
                         if (op2_sign) op2 = -op2;
-
+                        case (operation)
+                            2'b00: result = op1 + op2; 
+                            2'b01: result = op1 - op2;
+                            2'b10: result = op1 * op2;
+                            2'b11: result = op1 / op2;
+                            default: result = 0;
+                        endcase
                         if (result > 9999 | result < -9999) begin
                             // NaN
-                            answer[4] = 10;
-                            answer[3] = 11;
-                            answer[2] = 10;
-                            answer[1] = 13;
+                            answer[4] = 13;
+                            answer[3] = 10;
+                            answer[2] = 11;
+                            answer[1] = 10;
                             answer[0] = 13;
                         end else begin
-                            if (result < $signed(0)) begin
-                                result = -result;
-                                answer[4] = 10;
-                            end else answer[4] = 0;
-                            answer[3] = (result / 1000) - (result / 10000 * 10);
-                            answer[2] = (result / 100) - (result / 1000 * 10);
-                            answer[1] = (result / 10) - (result / 100 * 10);
-                            answer[0] = (result) - (result / 10 * 10);
-                        end
+                            if (result < $signed(0)) 
+                            begin
+                                result =- result;
+                                answer[4] = 12;
+                            end else answer[4] = 13;
+                                answer[3] = (result / 1000) - (result / 10000 * 10);
+                                answer[2] = (result / 100) - (result / 1000 * 10);
+                                answer[1] = (result / 10) - (result / 100 * 10);
+                                answer[0] = (result) - (result / 10 * 10);
+                            end
                         state = 0;
                         op1_sign = 0;
                         op2_sign = 0;
@@ -194,12 +193,10 @@ module uartSystem (
                     end
                     default: data_in = 8'hff;
                 endcase
-
             if (data_in != 8'hFF) ena = 1;
         end
-
         if (btnC) begin
-            answer[4] = 0;
+            answer[4] = 13;
             answer[3] = 0;
             answer[2] = 0;
             answer[1] = 0;
@@ -207,8 +204,6 @@ module uartSystem (
             op1 = 0;
             op2 = 0;
         end
-
         last_rec = received;
     end
-
 endmodule

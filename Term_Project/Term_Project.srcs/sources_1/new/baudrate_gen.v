@@ -1,9 +1,9 @@
 `timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
-// Company: Computer Engineering Department, Chulalongkorn University
-// Engineer: Pollawat Hongwimol
+// Company: 
+// Engineer: 
 // 
-// Create Date: 04/12/2020 04:46:50 PM
+// Create Date: 
 // Design Name: 
 // Module Name: baudrate_gen
 // Project Name: 
