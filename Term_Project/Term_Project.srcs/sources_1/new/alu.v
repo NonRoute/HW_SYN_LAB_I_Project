@@ -8,8 +8,8 @@
 //              : Chulalongkorn University.
 module alu (
     output reg signed [31:0] S,
-    input signed [16:0] A,
-    input signed [16:0] B,
+    input signed [15:0] A,
+    input signed [15:0] B,
     input [1:0] alu_ops
 );
 
