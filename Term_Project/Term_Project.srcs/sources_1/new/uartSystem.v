@@ -56,6 +56,7 @@ module uartSystem (
     reg [7:0] answer[0:4];
     reg [1:0] state = 0;
     reg signed [31:0] result;
+    wire signed [31:0] result_alu;
     reg signed [15:0] op1, op2;
     reg op1_sign = 0, op2_sign = 0;
     reg [1:0] operation = 0;
@@ -83,7 +84,15 @@ module uartSystem (
         sent,
         RsTx
     );
-
+    alu (
+        result_alu,
+        op1,
+        op2,
+        op1_sign,
+        op2_sign,
+        operation
+    );
+    
     initial begin
         answer[4] = 13;
         answer[3] = 0;
@@ -157,15 +166,7 @@ module uartSystem (
                     end
                     K_ENTER: begin
                         data_in = 8'h20;
-                        if (op1_sign) op1 = -op1;
-                        if (op2_sign) op2 = -op2;
-                        case (operation)
-                            2'b00: result = op1 + op2; 
-                            2'b01: result = op1 - op2;
-                            2'b10: result = op1 * op2;
-                            2'b11: result = op1 / op2;
-                            default: result = 0;
-                        endcase
+                        result = result_alu;
                         if (result > 9999 | result < -9999) begin
                             // NaN
                             answer[4] = 13;

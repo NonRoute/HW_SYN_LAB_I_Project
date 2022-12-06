@@ -97,6 +97,7 @@ read_verilog -library xil_defaultlib {
   D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/uartSystem.v
   D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/receiver.v
   D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/baudrate_gen.v
+  D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.srcs/sources_1/new/alu.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

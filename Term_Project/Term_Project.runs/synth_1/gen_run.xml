@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1670260915" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/system.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1670318928" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/system.dcp">
   <File Type="PA-TCL" Name="system.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="system_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_reports.tcl"/>
@@ -74,6 +74,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/baudrate_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
