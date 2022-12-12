@@ -2,70 +2,13 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sun Dec  4 19:24:16 2022
-# Process ID: 22404
+# Start of session at: Thu Dec  8 21:03:23 2022
+# Process ID: 16408
 # Current directory: D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23964 D:\OneDrive\University\year_3\semester_1\2110363_HW_SYN_LAB_I\project\Final_Project\HW_SYS_LAB_Project\Term_Project\Term_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17276 D:\OneDrive\University\year_3\semester_1\2110363_HW_SYN_LAB_I\project\Final_Project\HW_SYS_LAB_Project\Term_Project\Term_Project.xpr
 # Log file: D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/vivado.log
 # Journal file: D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project\vivado.jou
 # Running On: DESKTOP-K9LHMM3, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 12, Host memory: 34259 MB
 #-----------------------------------------------------------
 start_gui
 open_project D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.xpr
-launch_simulation -simset [get_filesets sim_2 ]
-launch_simulation -simset [get_filesets sim_2 ]
-source screen_tb.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source screen_tb.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source screen_tb.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source screen_tb.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-launch_simulation -simset [get_filesets sim_2 ]
-source screen_tb.tcl
-close_sim
-launch_simulation -simset [get_filesets sim_2 ]
-source screen_tb.tcl
-launch_simulation -simset [get_filesets sim_3 ]
-launch_simulation -simset [get_filesets sim_3 ]
-source vga_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.runs/impl_1/vga.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.runs/impl_1/vga.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.runs/impl_1/vga.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/University/year_3/semester_1/2110363_HW_SYN_LAB_I/project/Final_Project/HW_SYS_LAB_Project/Term_Project/Term_Project.runs/impl_1/vga.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_sim
-close_sim

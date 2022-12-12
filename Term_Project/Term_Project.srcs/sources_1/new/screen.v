@@ -54,7 +54,7 @@ module screen(
     
     // gradient rgb effect
     reg [11:0] gradient = 0;
-    reg [15:0] count = 0;
+    reg [14:0] count = 0;
     
     always @(posedge p_tick) begin
         if (y==0 && x==0)
